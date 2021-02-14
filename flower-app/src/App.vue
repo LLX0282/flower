@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app">
     <router-view />
   </div>
 </template>
@@ -23,4 +23,8 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {
      
     font-weight: normal; }
 ul { list-style: none; }
+.app{
+  background-color:#ffff ;
+  height:100vh; 
+}
 </style>
