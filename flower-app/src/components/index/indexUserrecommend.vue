@@ -7,7 +7,7 @@
             <div class="userOne">
                 <div class="head">
                 </div>
-                <div class="test">丶肖kkgggggggggg先生</div>
+                <div class="test">肖阿斯顿发斯蒂芬先生</div>
             </div>
             <div class="userOne">
                 <div class="head">
@@ -35,7 +35,6 @@
 </template>
 
 <script>
-
     export default {
 
     }
@@ -48,6 +47,7 @@
         margin-left: 5px;
         margin-top: 15px;
     }
+
     .user {
         overflow-x: scroll;
         width: 90vw;
@@ -78,6 +78,9 @@
                 line-height: 21px;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
             }
         }
     }
