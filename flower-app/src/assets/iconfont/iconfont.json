@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1702783",
+      "name": "评论",
+      "font_class": "comment",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "3193695",
+      "name": "购物车",
+      "font_class": "gouwuche1",
+      "unicode": "e570",
+      "unicode_decimal": 58736
+    },
+    {
+      "icon_id": "9135337",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "10113290",
+      "name": "首页-选中",
+      "font_class": "yemian1",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "10441288",
+      "name": "我 的",
+      "font_class": "wodedangxuan",
+      "unicode": "e50f",
+      "unicode_decimal": 58639
+    },
+    {
+      "icon_id": "16148912",
+      "name": "点赞",
+      "font_class": "zan2-selected",
+      "unicode": "e507",
+      "unicode_decimal": 58631
+    },
+    {
+      "icon_id": "19222551",
+      "name": "商店",
+      "font_class": "shangdian",
+      "unicode": "e505",
+      "unicode_decimal": 58629
+    },
+    {
+      "icon_id": "19750644",
+      "name": "购物车-23",
+      "font_class": "gwc",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    }
+  ]
+}

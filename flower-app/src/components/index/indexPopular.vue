@@ -3,41 +3,82 @@
         <div class="title">
             {{title}}
         </div>
-        <div v-for="(item,i) in this.dataList" :key=i>
-            <div class="popular">
-                <div class="top">
-                    <div class="head"></div>
-                    <div class="center">
-                        <div class="name">
-                            范迪塞尔多
-                        </div>
-                        <div class="timePhone">
-                            <div class="time">12分钟前</div>
-                            <div class="phone">
-                                <img src="../../assets/phone.png" alt="">
-                                <div class="modelPhone">华为p40</div>
+        <div>
+            <div v-for="(item,i) in this.dataList" :key=i>
+                <div class="popular">
+                    <div class="top">
+                        <div class="head"></div>
+                        <div class="center">
+                            <div class="name">
+                                范迪塞尔多
+                            </div>
+                            <div class="timePhone">
+                                <div class="time">12分钟前</div>
+                                <div class="phone">
+                                    <img src="../../assets/phone.png" alt="">
+                                    <div class="modelPhone">华为p40</div>
+                                </div>
                             </div>
                         </div>
+                        <img class="zhankai" src="../../assets/zhankai.png" alt="">
                     </div>
-                    <img class="zhankai" src="../../assets/zhankai.png" alt="">
                 </div>
-            </div>
-            <div class="preText">
-                <p ref='text'>
-                    {{item.minContent}}
-                    <el-button type="text" class="read-whole-btn" @click="qieHuan(item,1)"
-                        v-if="item.stat==0 && item.content.length > 140">
-                        <span>展开</span>
-                        <i class="el-icon-arrow-down"></i>
-                    </el-button>
-                    <el-button type="text" class="read-whole-btn" @click="qieHuan(item,0)"
-                        v-if="item.stat==1 && item.content.length > 140">
-                        <span>收起</span>
-                        <i class="el-icon-arrow-up"></i>
-                    </el-button>
-                </p>
+                <div class="preText">
+                    <p ref='text'>
+                        {{item.minContent}}
+                        <el-button type="text" class="read-whole-btn" @click="qieHuan(item,1)"
+                            v-if="item.stat==0 && item.content.length > 140">
+                            <span>展开</span>
+                            <i class="el-icon-arrow-down"></i>
+                        </el-button>
+                        <el-button type="text" class="read-whole-btn" @click="qieHuan(item,0)"
+                            v-if="item.stat==1 && item.content.length > 140">
+                            <span>收起</span>
+                            <i class="el-icon-arrow-up"></i>
+                        </el-button>
+                    </p>
+                </div>
+                <div class="pic">
+                    <van-grid :border="true" :column-num="3" :gutter="2">
+                        <van-grid-item>
+                            <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
+                        </van-grid-item>
+                        <van-grid-item>
+                            <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
+                        </van-grid-item>
+                        <van-grid-item>
+                            <van-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
+                        </van-grid-item>
+                        <van-grid-item>
+                            <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
+                        </van-grid-item>
+                        <van-grid-item>
+                            <van-image src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
+                        </van-grid-item>
+                        <van-grid-item>
+                            <van-image src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
+                        </van-grid-item>
+                    </van-grid>
+                </div>
+                <div class="xian"></div>
+                <div class="bottom">
+                    <div class="icon">
+                      <div class="iconfont icon-zan2-selected left"></div>
+                      <div class="num">10000</div>  
+                    </div>
+                    <div class="icon">
+                       <div class="iconfont icon-comment center"></div> 
+                       <div class="num">2</div>
+                    </div>
+                    <div class="icon">
+                        <div class="iconfont icon-shoucang right"></div>
+                    </div>
+                    
+                </div>
+                <div class="hrBot"></div>
             </div>
         </div>
+
     </div>
 </template>
 <script>
@@ -190,9 +231,61 @@
             // -webkit-box-orient: vertical;
             // text-overflow: ellipsis;
         }
-        .read-whole-btn{
+
+        .read-whole-btn {
             color: #409EFF;
             border: 0px;
         }
+    }
+
+    .pic {
+
+        width: 95vw;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .xian {
+        border-bottom: solid 1px #BBBBBB;
+        width: 95vw;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .bottom {
+        width: 95vw;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: flex;
+        color: rgb(140, 140, 140);
+        display: flex;
+        .icon{
+            display: flex;
+            width: 120px;
+            padding-left: 50px;
+            //justify-content: center;
+            .num{
+                font-size: 14px;
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+        }
+        .left {
+            font-size: 20px;
+           
+        }
+        .center{
+            
+            font-size: 21px;
+        }
+        .right{
+            font-size: 19px;
+            
+        }
+    }
+    .hrBot{
+            width: 100vw;
+            height: 10px;
+            background-color: #f6f6f6;
     }
 </style>

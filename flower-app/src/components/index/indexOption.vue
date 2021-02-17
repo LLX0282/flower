@@ -5,6 +5,7 @@
                 <index-notlogin></index-notlogin>
                 <index-user></index-user>
                 <index-popular :title='title' :list='title'></index-popular>
+                <index-bottom></index-bottom>
             </el-tab-pane>
             <el-tab-pane label="头条" name="second">配置管理</el-tab-pane>
             <el-tab-pane label="问答" name="third">角色管理</el-tab-pane>
@@ -19,11 +20,13 @@
 import indexNotlogin from '@/components/index/indexNotlogin.vue'
 import indexUser from '@/components/index/indexUserrecommend.vue'
 import indexPopular from '@/components/index/indexPopular.vue'
+import indexBottom from '@/components/index/indexBottom.vue'
     export default {
         components:{
             indexNotlogin,
             indexUser,
-            indexPopular
+            indexPopular,
+            indexBottom
         },
         data() {
             return {
